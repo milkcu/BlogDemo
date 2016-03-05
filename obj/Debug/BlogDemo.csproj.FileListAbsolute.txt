@@ -1,0 +1,5 @@
+D:\Projects\VisualStudioProjects\BlogDemo\bin\BlogDemo.dll
+D:\Projects\VisualStudioProjects\BlogDemo\bin\BlogDemo.pdb
+D:\Projects\VisualStudioProjects\BlogDemo\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\VisualStudioProjects\BlogDemo\obj\Debug\BlogDemo.dll
+D:\Projects\VisualStudioProjects\BlogDemo\obj\Debug\BlogDemo.pdb

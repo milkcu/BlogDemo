@@ -1,0 +1,158 @@
+
+body 
+{
+    background-color: #e8e8e8;
+    padding: 20px;
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+a {
+    color: #4183C4;
+    text-decoration: none;
+}
+#page
+{
+    padding: 24px 24px 10px;
+    margin: 0px auto 24px auto;
+    max-width: 960px;
+    background-color: #FFFFFF;
+}
+#header
+{
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #E9E9E9;
+}
+#main
+{
+    border: 1px solid #E9E9E9;
+    overflow: hidden;
+}
+#left
+{
+    float: left;
+    padding: 20px;
+    border-right: 1px solid #e9e9e9;
+    width: 668px;
+}
+.post-item h2
+{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.post-item
+{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px double #F3F3F3;
+}
+.previous-link
+{
+    float: left;
+}
+.next-link
+{
+    float: right;
+}
+#left label
+{
+    display: inline-block;
+    width: 80px;
+}
+#left input
+{
+    width: 120px;
+}
+.post 
+{
+    margin-bottom: 20px;
+}
+.post-title
+{
+    font-size: 22px;
+}
+.post-detail
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.comment-form
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.comment-form textarea
+{
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+.post-table
+{
+    margin-bottom: 10px;
+    text-align: center;
+    color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+.post-table th
+{
+    border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+.post-table td
+{
+    border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+#left .post-form input
+{
+    width: 250px;
+}
+#left .post-form textarea
+{
+    width: 550px;
+    height: 400px;
+}
+#left .post-form input[type="submit"]
+{
+    width: 640px;
+}
+#right
+{
+    float: right;
+    padding: 12px 6px 12px 6px;
+    width: 235px;
+}
+#right h3
+{
+    margin-bottom: 12px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    padding: 10px;
+}
+#right ul
+{
+    padding: 0px;
+}
+#right li
+{
+    list-style: none;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 5px;
+    //font-size: 13px;
+}
+#footer
+{
+    background-color: #F2F2F2;
+    margin-bottom: 34px;
+    padding: 24px 0;
+    text-align: center;
+}

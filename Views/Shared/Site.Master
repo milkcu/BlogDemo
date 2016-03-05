@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BlogDemo.Views.Shared.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BlogDemo</title>
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <h1><a href="/">A Simple Multi-User Blog System</a></h1>
+        </div>
+        <div id="main">
+            <div id="left">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="right">
+                <% BlogDemo.Models.Users users = new BlogDemo.Models.Users(); %>
+                <% List<BlogDemo.Models.Users.User> userList = users.ListUser(); %>
+                <h3>Dashboard</h3>
+                <ul>
+                    <% if(users.GetState() == 0) { %>
+                    <li>Welcome</li>
+                    <li><a href="/User/Register">Register</a></li>
+                    <li><a href="/User/Login">Login</a></li>
+                    <% } else { %>
+                    <li>Hello <b><a href="/Post/Index/<%= users.GetState() %>"><%= users.GetUsername(users.GetState()) %></a></b></li>
+                    <li><a href="/Post/Add">Have a Post</a></li>
+                    <li><a href="/Post/Manage">Posts Manager</a></li>
+                    <li><a href="/User/Logout">Logout</a></li>
+                    <% } %>
+                </ul>
+                <h3>User List</h3>
+                <ul>
+                    <% foreach (var user in userList) { %>
+                        <li><a href="/Post/Index/<%= user.uid %>"><%= user.username %></a></li>
+                    <% } %>
+                </ul>
+                <h3>Authors</h3>
+                <ul>
+                    <li>刘新桐 SA15226509</li>
+                    <li>孙健 SA15226509</li>
+                    <li>孙震 SA15226509</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright &copy; 2015 USTC</p>
+        </div>
+    </div>
+</body>
+</html>
